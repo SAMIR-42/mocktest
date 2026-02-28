@@ -1,4 +1,4 @@
-// Demo Questions (later 1000 replace kar dena)
+// Demo Questions (later 1000 replace kar dena)...
 const allQuestions = [
   {
     id: 1,
