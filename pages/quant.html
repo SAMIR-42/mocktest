@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Legal Test | MockTest Arena</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="quant.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Setup Section -->
+      <div id="setup-box" class="card">
+        <h2>General Knowledge Test</h2>
+        <p>Enter number of questions you want to attempt</p>
+        <input type="number" id="questionCount" placeholder="e.g. 20" min="1" />
+        <button id="startBtn">Start Exam</button>
+      </div>
+
+      <!-- Exam Section -->
+      <div id="exam-box" class="hidden">
+        <div class="exam-header">
+          <h3 id="question-number"></h3>
+          <div class="timer-wrapper">
+            <svg class="progress-ring" width="70" height="70">
+              <circle
+                class="progress-ring__circle"
+                stroke-width="6"
+                fill="transparent"
+                r="30"
+                cx="35"
+                cy="35"
+              />
+            </svg>
+            <div id="timer-text">50</div>
+          </div>
+        </div>
+
+        <div id="question-container"></div>
+
+        <button id="nextBtn">Next Question</button>
+
+        <button id="submitBtn">Submit Exam</button>
+      </div>
+
+      <!-- Result Section -->
+      <div id="result-box" class="hidden"></div>
+    </div>
+
+    <script src="quant.js"></script>
+  </body>
+</html>
