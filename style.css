@@ -1,0 +1,196 @@
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #e3f2fd, #ffffff);
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+    color: #1a1a1a;
+  }
+  
+  /* Background Blur Circles */
+  .blur-circle {
+    position: fixed;
+    border-radius: 50%;
+    filter: blur(120px);
+    z-index: 0;
+  }
+  
+  .blur-one {
+    width: 300px;
+    height: 300px;
+    background: #90caf9;
+    top: -80px;
+    left: -80px;
+  }
+  
+  .blur-two {
+    width: 250px;
+    height: 250px;
+    background: #bbdefb;
+    bottom: -80px;
+    right: -60px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px 40px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Glass Card */
+  .glass-card {
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.75);
+    padding: 40px 30px;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    max-width: 420px;
+    width: 100%;
+    text-align: center;
+    animation: fadeUp 0.8s ease;
+  }
+  
+  /* Logo */
+  .logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .logo i {
+    color: #1e88e5;
+    margin-right: 6px;
+  }
+  
+  /* Tagline */
+  .tagline {
+    font-size: 15px;
+    margin-bottom: 15px;
+    color: #555;
+  }
+  
+  /* Typing */
+  .typing-container {
+    font-weight: 600;
+    color: #1e88e5;
+    min-height: 24px;
+    margin-bottom: 12px;
+  }
+  
+  /* Sub text */
+  .sub-text {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 25px;
+  }
+  
+  /* Start Button */
+  .start-btn {
+    background: linear-gradient(135deg, #1e88e5, #1565c0);
+    color: #fff;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 50px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .start-btn i {
+    margin-right: 5px;
+  }
+  
+  .start-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(30, 136, 229, 0.3);
+  }
+  
+  .start-btn:active {
+    transform: scale(0.96);
+  }
+  
+  /* Features Section */
+  .features {
+    padding: 50px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .feature-box {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(8px);
+    padding: 20px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease;
+  }
+  
+  .feature-box i {
+    font-size: 24px;
+    color: #1e88e5;
+    margin-bottom: 8px;
+  }
+  
+  .feature-box h3 {
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+  
+  .feature-box p {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .feature-box:hover {
+    transform: translateY(-4px);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+    color: #555;
+  }
+  
+  /* Animation */
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(25px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Mobile spacing tweak */
+  @media (max-width: 480px) {
+    .glass-card {
+      padding: 30px 20px;
+    }
+  }
+  
+  
+  
+  
